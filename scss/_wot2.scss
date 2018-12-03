@@ -1,0 +1,56 @@
+.wot2{
+    width: 100%;
+    height: auto;
+    background-color: $light-color;
+    .container{
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 100px 0 150px 0;
+        position: relative;
+        article{
+            text-align: center;
+            .icon-twitter{
+                font-size: 30px;
+                color: #00ACED;
+            }
+            h1{
+                font-size: 17px;
+                color: $dark-color;
+                font-weight: bold;
+                margin: 20px 0;
+                font-family: $font1;
+                letter-spacing: 3px;
+                span{
+                    color: $text-color;
+                    font-weight: normal;
+                }
+            }
+            p{
+                font-size: 17px;
+                color: $text-color;
+                line-height: 30px;
+                font-family: $font1;
+                font-style: italic;
+            }
+        }
+        .selection-section{
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            .selection{
+                width: 10px;
+                height: 10px;
+                display: inline-block;
+                background-color: $light-color;
+                border-radius: 5px;
+                border: 1px solid $text-color;
+                cursor: pointer;
+                margin: 0 2px;
+            }
+            .selected{
+                background-color: $text-color;
+            }
+        }
+    }
+}

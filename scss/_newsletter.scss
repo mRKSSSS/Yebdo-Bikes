@@ -1,0 +1,44 @@
+.newsletter{
+    width: 100%;
+    height: auto;
+    .container{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 100px 0;
+        background-color: $white;
+        img{
+            margin-bottom: 30px;
+        }
+        p{
+            font-family: $font1;
+            font-size: 24px;
+            font-style: italic;
+            color: $text-color;
+            margin-bottom: 30px;
+        }
+        form{
+            input{
+                padding: 15px;
+                height: 65px;
+                font-size: 20px;
+                &:nth-child(1){
+                    width: 400px;
+                }
+                &:nth-child(2){
+                    width: 125px;
+                    background-color: $main-color;
+                    color: $white;
+                    border: none;
+                    cursor: pointer;
+                    transition: all .5s ease;
+                    &:hover{
+                        background-color: $white;
+                        color: $main-color;
+                        border: 1px solid $main-color;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,83 @@
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: $light-color;
+    .container{
+        width: 80%;
+        margin: 0 auto;
+        padding: 100px 0;
+        font-size: 0;
+        .address{
+            display: inline-block;
+            width: 33%;
+            font-size: 16px;
+            vertical-align: middle;
+            h1{
+                font-size: 16px;
+                color: $text-color;
+                font-family: $font1;
+                font-weight: bold;
+            }
+            p{
+                font-size: 16px;
+                color: $text-color;
+                font-family: $font1;
+                font-style: italic;
+            }
+        }
+        .social-media{
+            display: inline-block;
+            width: 34%;
+            font-size: 16px;
+            text-align: center;
+            vertical-align: middle;
+            .twitter, .facebook, .pinterest {
+                display: inline-block;
+                border-radius: 50%;
+                width: 35px;
+                height: 35px;
+                position: relative;
+                cursor: pointer;
+                margin: 4px;  
+                transition: all .4s ease;
+                &:hover{
+                    background-color: $dark-color;
+                }
+                a i {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: $white;
+                }
+            }
+            .twitter{
+                background-color: #78cef1;
+            }
+            .facebook{
+                background-color: #527cbe;
+            }
+            .pinterest{
+                background-color: #ec5654;
+            }
+        }
+        .signature{
+            display: inline-block;
+            width: 33%;
+            font-size: 16px;
+            vertical-align: middle;
+            text-align: right;
+            p{
+                font-size: 16px;
+                color: $text-color;
+                font-family: $font1;
+                font-style: italic;
+                line-height: 30px;
+                img{
+                    float: right;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}

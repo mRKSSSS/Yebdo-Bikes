@@ -1,0 +1,89 @@
+.gallery{
+    width: 100%;
+    height: auto;
+    font-size: 0;
+    .gallery-left{
+        width: 33%;
+        height: 534px;
+        display: inline-block;
+        vertical-align: top;
+        .gallery-left-img-small{
+            width: 50%;
+            height: 50%;
+            display: inline-block;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .gallery-left-img-medium{
+            width: 100%;
+            height: 50%;
+            display: block;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+    .gallery-center{
+        width: 34%;
+        height: 534px;
+        display: inline-block;
+        vertical-align: top;
+        .gallery-left-img-medium{
+            width: 50%;
+            height: 100%;
+            display: inline-block;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+    .gallery-right{
+        width: 33%;
+        height: 534px;
+        display: inline-block;
+        vertical-align: top;
+        .gallery-right-img-medium{
+            width: 100%;
+            height: 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .gallery-right-img-small{
+            width: 50%;
+            height: 50%;
+            display: inline-block;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+    .shop{
+        width: 100%;
+        height: 200px;
+        background-color: $dark-color;
+        position: relative;
+        a{
+            text-decoration: none;
+            font-family: $font1;
+            font-size: 14px;
+            font-weight: 700;
+            color: $white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid $white;
+            padding: 0 50px;
+            line-height: 50px;
+            transition: all .5s ease;
+            &:hover{
+                background-color: $white;
+                color: $dark-color;
+            }
+        }
+    }
+}

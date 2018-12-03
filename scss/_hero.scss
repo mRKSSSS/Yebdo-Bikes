@@ -1,0 +1,63 @@
+.hero {
+	height:100%;
+	background-image:url('../images/hero.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+    background-position:center;
+    header{
+        width: 100%;
+        .container{
+            width: 80%;
+            padding: 25px 0;
+            margin: 0 auto;
+            nav{
+                text-align: center;
+                position: relative;
+                ul{
+                    display: inline-block;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    &:first-child{
+                        right: 60%;
+                    }
+                    &:last-child{
+                        left: 60%;
+                    }
+                    li{
+                        display: inline;
+                        margin: 0 12px;
+                        position: relative;
+                        a{
+                            text-decoration: none;
+                            font-size: 13px;
+                            color: $dark-color;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            font-family: $font1;
+                            letter-spacing: 2px;
+                            &::after{
+                                content: '';
+                                position: absolute;
+                                bottom: -10px;
+                                left: 0;
+                                display: inline-block;
+                                height: 2px;
+                                width: 0;
+                                background-color: $dark-color;
+                                transition: all .6s ease-in-out;
+                            }   
+                        }
+                        a:hover::after{
+                            width: 100%;
+                            background-color: $main-color;
+                        }
+                    }
+                }
+                .main-logo{
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
